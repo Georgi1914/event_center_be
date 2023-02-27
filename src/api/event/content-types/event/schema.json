@@ -25,9 +25,9 @@
     "address": {
       "type": "string"
     },
-    "category": {
+    "categories": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "events"
     },
@@ -36,6 +36,14 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "createdEvents"
+    },
+    "mainPicture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
