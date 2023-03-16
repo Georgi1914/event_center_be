@@ -75,7 +75,7 @@
       "target": "api::event.event",
       "mappedBy": "creator"
     },
-    "favouriteEvents": {
+    "favoriteEvents": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::event.event"
